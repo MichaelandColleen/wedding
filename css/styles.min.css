@@ -44,8 +44,8 @@ h5 {
 .btn:hover,
 .btn:focus {
     color: #fff;
-    border-color: #00AFB9;
-    background-color: #00AFB9;
+    border-color: #f07167;
+    background-color: #f07167;
 }
 .btn-white {
     font-size: 13px;
@@ -54,22 +54,23 @@ h5 {
     -webkit-border-radius: 40px;
     border-radius: 40px;
     display: inline-block;
-    border-color: #fff;
+    text-align:center;
+    border-color: #fed9b7;
 }
 .btn-white:hover,
 .btn-white:focus {
-    color: #00AFB9;
-    border-color: #00AFB9;
+    color: #f07167;
+    border-color: #f07167;
 }
 .btn-fill {
     color: #fff;
-    border: solid 2px #00AFB9;
+    border: solid 2px #f07167;
     -moz-border-radius: 40px;
     -webkit-border-radius: 40px;
     border-radius: 40px;
     display: inline-block;
     text-transform: uppercase;
-    background-color: #00AFB9;
+    background-color: #f07167;
 }
 .btn-fill:hover,
 .btn-fill:focus {
@@ -79,6 +80,7 @@ h5 {
 }
 .btn-small {
     padding: 8px 30px;
+    text-align:center;
 }
 .btn-large {
     padding: 15px 40px;
@@ -108,7 +110,7 @@ section.blog {
     margin: 0;
 }
 a {
-    color: #00AFB9;
+    color: #f07167;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
     -webkit-transition-duration: 200ms;
@@ -343,8 +345,9 @@ section .header {
     transition: all 300ms ease-in-out;
 }
 .hero {
-    min-height: 750px;
-    background: url("../img/hero-min.jpg") center center;
+    min-height: 600px;
+    /* background: url("../img/hero-min.jpg") center center; */
+    background-color: #0081a7;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -392,7 +395,7 @@ header {
     transition: padding 300ms ease-in-out;
 }
 header a {
-    color: #fff;
+    color: #fed9b7;
     text-transform: uppercase;
     font-size: 13px;
 }
@@ -413,11 +416,11 @@ header ul.primary-nav li {
     display: inline;
 }
 header ul.primary-nav li a {
-    color: #fff;
+    color: #fed9b7;
     padding-right: 25px;
 }
 header ul.primary-nav li a:hover {
-    color: #00AFB9;
+    color: #f07167;
 }
 header ul.primary-nav li:last-child a {
     padding-right: 0px;
@@ -426,10 +429,10 @@ header ul.member-actions li {
     display: inline;
 }
 header ul.member-actions li a {
-    color: #fff;
+    color: #fed9b7;
 }
 header ul.member-actions li a:hover {
-    color: #00AFB9;
+    color: #f07167;
 }
 header .header-nav {
     display: inline-block;
@@ -453,7 +456,7 @@ header .member-actions {
 }
 .intro span.icon {
     font-size: 40px;
-    color: #00AFB9;
+    color: #f07167;
     font-weight: bold;
 }
 .intro-icon {
@@ -489,7 +492,7 @@ header .member-actions {
 }
 .features span.icon {
     font-size: 35px;
-    color: #00AFB9;
+    color: #f07167;
     font-weight: bold;
 }
 .features .feature-icon {
@@ -834,7 +837,7 @@ header .member-actions {
     position: relative;
 }
 .rsvp .rsvp-form .form-input-group i {
-    color: #00AFB9;
+    color: #f07167;
     font-size: 14px;
 }
 .rsvp .rsvp-form .form-input-group i:after {
