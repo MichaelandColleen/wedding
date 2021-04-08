@@ -345,6 +345,7 @@ section .header {
     transition: all 300ms ease-in-out;
 }
 .hero {
+  display: flex;
     min-height: 600px;
     /* background: url("../img/hero-min.jpg") center center; */
     background-color: #0081a7;
@@ -368,11 +369,13 @@ section .header {
     margin-bottom: 80px;
 }
 .hero .hero-content {
-    padding-top: 40%;
+    padding-top: 10%;
 }
 .hero .hero-content img {
     width: 55%;
-    margin-bottom: 12%;
+    margin-bottom: 22%;
+    margin-top: 22%;
+
 }
 .navigation {
     transition: all 300ms ease-in-out;
