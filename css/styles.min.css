@@ -368,10 +368,10 @@ section .header {
     position: center;
 }
 .hero .down-arrow a {
-    color: #fff;
+    color: #c44536;
 }
 .hero h1 {
-    color: #fff;
+    color: #c44536;
     margin-bottom: 40px;
 }
 .hero p.intro {
@@ -965,7 +965,7 @@ body.modal-open {
 .circle {
   width: 20px;
   height: 20px;
-  background: #e97162;
+  background: #c44536;
   border-radius: 15px;
   position: absolute;
   top: -7px;
