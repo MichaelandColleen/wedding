@@ -55,7 +55,7 @@ h5 {
     border-radius: 40px;
     display: inline-block;
     text-align:center;
-    border-color: #fed9b7;
+    border-color: #c44536;
 }
 .btn-white:hover,
 .btn-white:focus {
@@ -358,13 +358,14 @@ section .header {
 .hero {
   display: flex;
     min-height: 600px;
-    /* background: url("../img/hero-min.jpg") center center; */
-    background-color: #0081a7;
+    background: url("../img/couple_pics/colleenmichael.png") center center;
+    /* /background-color: #0081a7; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: center;
 }
 .hero .down-arrow a {
     color: #fff;
@@ -383,9 +384,10 @@ section .header {
     padding-top: 10%;
 }
 .hero .hero-content img {
-    width: 55%;
+    width: 65%;
     margin-bottom: 22%;
-    margin-top: 22%;
+    margin-top: 32%;
+    padding-top: 30%;
 
 }
 .navigation {
@@ -396,7 +398,7 @@ section .header {
 }
 .fixed {
     position: fixed;
-    background-color: rgba(55, 36, 40, 0.88);
+    background-color: #edddd4;
     z-index: 999;
     width: 100%;
 }
@@ -409,7 +411,7 @@ header {
     transition: padding 300ms ease-in-out;
 }
 header a {
-    color: #fed9b7;
+    color: #edddd4;
     text-transform: uppercase;
     font-size: 13px;
 }
@@ -430,7 +432,7 @@ header ul.primary-nav li {
     display: inline;
 }
 header ul.primary-nav li a {
-    color: #fed9b7;
+    color: #c44536;
     padding-right: 25px;
 }
 header ul.primary-nav li a:hover {
@@ -443,7 +445,7 @@ header ul.member-actions li {
     display: inline;
 }
 header ul.member-actions li a {
-    color: #fed9b7;
+    color: #c44536;
 }
 header ul.member-actions li a:hover {
     color: #f07167;
