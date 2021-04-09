@@ -14,6 +14,7 @@ $('.modal-form').on('submit', ((event) => {
     console.log("it worked")
     $('.secret-bridal-party').show()
     $('#bridal-modal').modal('hide')
+    $('#secret-modal').hide()
 
   } else {
     $('.modal-form').trigger("reset")
