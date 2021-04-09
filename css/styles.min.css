@@ -96,15 +96,19 @@ section.rsvp {
 section.features,
 section.events,
 section.lodging,
-section.bridal-party,
 section.blog {
     background: #f8f9fd;
 }
 
 .secret-bridal-party {
-  color: #f07167 !important;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
+.secret-section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .group:after {
     content: "";
     display: table;

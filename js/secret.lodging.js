@@ -15,6 +15,7 @@ $('.modal-form').on('submit', ((event) => {
     $('.secret-bridal-party').show()
     $('#bridal-modal').modal('hide')
     $('#secret-modal').hide()
+    $('.bridal-party').css('background-color', '#fdf0d5')
 
   } else {
     $('.modal-form').trigger("reset")
