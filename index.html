@@ -52,8 +52,8 @@
                 <!-- <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li> -->
               </ul>
               <ul class="member-actions">
-                <li><a href="#map" class="login">Venue</a></li>
                 <li><a href="#lodging">Lodging</a></li>
+                <li><a href="#map" class="login">Venue</a></li>
                 <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
               </ul>
             </nav>
@@ -282,62 +282,8 @@ data-property="{videoURL:'https://player.vimeo.com/video/159245435',containment:
 </div>
 </section> -->
 
-<section id="map" class="section-padding">
-  <div class="text-center">
-    <h3>How do I get there?</h3>
-    <p>It's way easier than you think!</p>
-  </div>
-  <div id="map-canvas"></div>
-  <div id="map-content-wrapper" class="container pointer-events-none">
-    <div class="row">
-      <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-        <div class="text-center">
-          <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-            <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
-          </div>
-        </div>
-        <div id="map-content" class="pointer-events-auto">
-          <div class="row">
-            <div class="col-md-6">
-              <h5>Cobb Hill Estate</h5>
-              <p>279 Cobb Hill Rd, Harrisville, NH 03450</p>
-            </div>
-            <div class="col-md-6">
-              <h5>Input Cobb Hill Number and Shuttle service number</h5>
-              <p><i class="fa fa-mobile"></i> <a href="tel://">input cobb hill number</a><br>
-                <i class="fa fa-mobile"></i> <a href="tel://">shuttle service number</a></p>
-              </div>
-            </div>
-            <div class="row text-center">
-              <!-- <div class="col-md-6" style="padding: 5px;">
-              <a class="btn btn-fill btn-small"
-              href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
-              class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-            </div> -->
-            <div class="col-md-6" style="padding: 5px;">
-              <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
-                map</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-  </div>
-  <div class="container">
-    <div class="row hidden-lg hidden-md hidden-xs">
-      <div class="col-xs-12 section-border section-padding"></div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row hidden-lg hidden-md hidden-xs">
-      <div class="col-xs-12 section-border section-padding"></div>
-    </div>
-  </div>
-</section>
-
-<section class="lodging">
+<section class="lodging section-padding">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
@@ -345,9 +291,7 @@ data-property="{videoURL:'https://player.vimeo.com/video/159245435',containment:
       </div>
     </div>
     <div class="row">
-      <div class="col-md-3">
         <!-- <img src="s" class="wp1"></div> -->
-        <div class="col-md-6">
           <h4 class="header">Inns & Bed and Breakfasts:</h4>
           <p>
           <ul>
@@ -384,17 +328,11 @@ data-property="{videoURL:'https://player.vimeo.com/video/159245435',containment:
           </li>
           </ul>
           </p>
-        </div>
-        <div class="col-md-3 hidden-sm hidden-xs">
-          <!-- <img src="" class="wp2"></div> -->
-        </div>
-        <div class="row">
-          <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="" class="wp8"></div>
-          <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="" class="wp9"></div>
-        </div>
-      </div>
     </div>
     <div class="container">
+      <div class="row hidden-lg hidden-md hidden-xs">
+        <div class="col-xs-12 section-border section-padding"></div>
+      </div>
       <div class="row hidden-lg hidden-md hidden-xs">
         <div class="col-xs-12 section-border section-padding"></div>
       </div>
@@ -469,6 +407,62 @@ data-property="{videoURL:'https://player.vimeo.com/video/159245435',containment:
   </div>
 </div>
 </section>
+
+<section id="map" class="section-padding">
+  <div class="text-center">
+    <h3>How do I get there?</h3>
+    <p>It's way easier than you think!</p>
+  </div>
+  <div id="map-canvas"></div>
+  <div id="map-content-wrapper" class="container pointer-events-none">
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
+        <div class="text-center">
+          <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+            <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+          </div>
+        </div>
+        <div id="map-content" class="pointer-events-auto">
+          <div class="row">
+            <div class="col-md-6">
+              <h5>Cobb Hill Estate</h5>
+              <p>279 Cobb Hill Rd, Harrisville, NH 03450</p>
+            </div>
+            <div class="col-md-6">
+              <h5>Input Cobb Hill Number and Shuttle service number</h5>
+              <p><i class="fa fa-mobile"></i> <a href="tel://">input cobb hill number</a><br>
+                <i class="fa fa-mobile"></i> <a href="tel://">shuttle service number</a></p>
+              </div>
+            </div>
+            <div class="row text-center">
+              <!-- <div class="col-md-6" style="padding: 5px;">
+              <a class="btn btn-fill btn-small"
+              href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
+              class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
+            </div> -->
+            <div class="col-md-6" style="padding: 5px;">
+              <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
+                map</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container">
+    <div class="row hidden-lg hidden-md hidden-xs">
+      <div class="col-xs-12 section-border section-padding"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row hidden-lg hidden-md hidden-xs">
+      <div class="col-xs-12 section-border section-padding"></div>
+    </div>
+  </div>
+</section>
+
 
 <section class="rsvp text-center" id="rsvp">
 
