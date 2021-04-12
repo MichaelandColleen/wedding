@@ -506,10 +506,7 @@ header .member-actions {
     width: auto;
     height: auto;
 }
-#intro img {
-    width: 100%;
-    height: auto;
-}
+
 #intro p {
     text-align: center;
 }
@@ -975,9 +972,8 @@ body.modal-open {
   }
 }
 #lineCont {
-  width: 80%;
+  width: 85%;
   position: relative;
-  max-height: inherit;
 }
 
 #line {
@@ -1044,6 +1040,10 @@ body.modal-open {
   }
 }
 
+.timeline-photo{
+  height: auto;
+  width: 500%;
+}
 /* #mainCont {
   height: 80%;
   width: 100%;

@@ -1,4 +1,4 @@
-
+$('.popupSpan1, .popupSpan2, .popupSpan3, .popupSpan4, .popupSpan5, .popupSpan6, .popupSpan7, .popupSpan8, .popupSpan9, .popupSpan10, .popupSpan11').hide()
 
 $(".circle").mouseenter(function() {
   $(this).addClass("hover");
@@ -10,7 +10,8 @@ $(".circle").mouseleave(function() {
 
 $(".circle").click(function(event) {
   const circleNumber = $(event.target).data('circle')
-  $('.popupSpan'+ circleNumber).toggle()
+  $('.popupSpan1, .popupSpan2, .popupSpan3, .popupSpan4, .popupSpan5, .popupSpan6, .popupSpan7, .popupSpan8, .popupSpan9, .popupSpan10, .popupSpan11').hide()
+  $('.popupSpan'+circleNumber).toggle()
 });
 //
 // function selectDate(selector) {
