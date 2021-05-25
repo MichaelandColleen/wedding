@@ -23,23 +23,3 @@ $('.modal-form').on('submit', ((event) => {
 
   }
 }))
-
-
-UserRegisterSerializer(data = { 'email': 'test@test.com', 'password': 'tetete', 'password_confirmation': 'tetete' }):
-email = CharField(max_length = 300, required = True)
-password = CharField(required = True)
-password_confirmation = CharField(required = True, write_only = True) user
-UserSerializer(data = { 'email': 'test@test.com', 'password': 'tetete' }):
-id = IntegerField(label = 'ID', read_only = True)
-email = EmailField(max_length = 255, validators = [<UniqueValidator(queryset = User.objects.all()) >])
-password = CharField(max_length = 128, min_length = 5, write_only = True)
-
-UserRegisterSerializer(data = { 'email': 'lol@lol', 'password': 'lol', 'password_confirmation': 'lol' }):
-email = CharField(max_length = 300, required = True)
-password = CharField(required = True)
-password_confirmation = CharField(required = True, write_only = True) user
-UserSerializer(data = { 'email': 'lol@lol', 'password': 'lol' }):
-id = IntegerField(label = 'ID', read_only = True)
-email = EmailField(max_length = 255, validators = [<UniqueValidator(queryset = User.objects.all()) >])
-password = CharField(max_length = 128, min_length = 5, write_only = True)
-Bad Request: /sign-up
