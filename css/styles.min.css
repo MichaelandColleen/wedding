@@ -370,7 +370,7 @@ section .header {
 .hero {
   display: flex;
     min-height: 600px;
-    background: url("../img/couple_pics/colleenmichael.png") center center;
+    background: url("../img/hero-min.jpg") center center;
     /* /background-color: #0081a7; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1006,7 +1006,7 @@ body.modal-open {
   top: -7px;
   border: 3px solid white;
   cursor: pointer;
-  &:before {
+   /* &.before {
     width: 10px;
     height: 10px;
     background: white;
@@ -1014,7 +1014,7 @@ body.modal-open {
     border-radius: 100%;
     top: 2px;
     left: 2px;
-    display: none;
+    display: none; */
   }
 
 
@@ -1029,19 +1029,19 @@ body.modal-open {
     display: none;
     transition: all 0.1s ease-out;
   }
-  // &:nth-child(odd) .popupSpan {
+  /* // &:nth-child(odd) .popupSpan {
   //   top: 20px;
-  // }
-  &.hover:before, &.active:before {
+  // } */
+  /* &:hover:before, &:active:before {
     display: block;
   }
-  &.hover .popupSpan, &.active .popupSpan {
+  &:hover .popupSpan, &:active .popupSpan {
     display: block;
   }
   &.active .popupSpan {
     top: -40px;
-  }
-}
+  } */
+
 
 .timeline-photo{
   height: auto;
