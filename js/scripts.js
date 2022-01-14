@@ -218,26 +218,22 @@ $(document).ready(function () {
         console.log(MD5($("#invite_code").val()), "invite code", data)
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+        console.log("invite code")
+        $.post('https://script.google.com/macros/s/AKfycbw1Mv69IFvh2nr8AECmw5-MZZ5sPRDn-de4rrz3vhdjiY5EMnM/exec', data)
+            .done(function (data) {
+                console.log(data);
+                if (data.result === "error") {
+                    $('#alert-wrapper').html(alert_markup('danger', data.message));
+                } else {
+                    $('#alert-wrapper').html('');
+                    $('#rsvp-modal').modal('show');
+                }
+            })
+            .fail(function (data) {
+                console.log(data);
+                $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+            });
 
-        if (MD5($('#invite_code').val()) !== 'f35b58668b258021190f862da75d17b9') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
-        } else {
-            console.log("invite code")
-            $.post('https://script.google.com/macros/s/AKfycbw1Mv69IFvh2nr8AECmw5-MZZ5sPRDn-de4rrz3vhdjiY5EMnM/exec', data)
-                .done(function (data) {
-                    console.log(data);
-                    if (data.result === "error") {
-                        $('#alert-wrapper').html(alert_markup('danger', data.message));
-                    } else {
-                        $('#alert-wrapper').html('');
-                        $('#rsvp-modal').modal('show');
-                    }
-                })
-                .fail(function (data) {
-                    console.log(data);
-                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
-                });
-        }
     });
 
 });
